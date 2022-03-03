@@ -32,18 +32,49 @@
 
 ## 构建&发布
 
-#### docs:dev
-开发模式查看手册、组件示例
+### run
 
-#### deploy.sh
+1. npm install
+2. docs:dev
+3. 访问url，查看用户手册、开发手册、示例
+
+### 发布模式
+
 后编译模式
-    
-    携带*.vue文件发布，使用者直接使用
 
+    携带*.vue、*.scss文件发布，使用者需要直接引用，然后通过脚手架编译后使用。
+    
 
 预编译模式
 
-    提前打包，提供各种版本的文件
+    提前构建dist目录，并且提供各种版本的文件
+
+### git发布
+
+使用者可以通过webpack依赖，进行使用。
+
+可以通过以下方式格式化用于npm软件包的Git URL：
+
+    git://github.com/user/project.git#commit-ish
+    
+    git+ssh://user@hostname:project.git#commit-ish
+    
+    git+http://user@hostname/project/blah.git#commit-ish
+    
+    git+https://user@hostname/project/blah.git#commit-ish
+
+代码示例
+
+    "dependencies": {
+        "my-components": "git+ssh://git@github.com:mvphjx/MyComponent.git"
+    }
+
+
+### npm模式
+
+发布到npm。通过版本号引用，install后使用。
+
+
 
 ## Vue Press
 使用手册&开发手册
