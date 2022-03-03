@@ -1,5 +1,10 @@
 # MyComponent
-业务组件库Demo
+业务组件库，主要功能：
+
+1. 组件库源码，包含多个业务组件
+2. 使用手册、开发手册
+3. 示例与Demo
+4. 组件库构建、发布：npm发布、git发布
 
 
 ## Project Structure 项目结构
@@ -22,11 +27,27 @@
 ## 业务组件库
 
 
-### MyCard
+#### MyCard 简单卡片
+#### MyTitle 简单标题
+
+## 构建&发布
+
+#### docs:dev
+开发模式查看手册、组件示例
+
+#### deploy.sh
+后编译模式
+    
+    携带*.vue文件发布，使用者直接使用
 
 
+预编译模式
 
-## vue press
+    提前打包，提供各种版本的文件
+
+## Vue Press
+使用手册&开发手册
+
     |__doc  vue-press文档
         |__.vuepress  vue-press文档
             |__components  组件
