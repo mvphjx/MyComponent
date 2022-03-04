@@ -1,11 +1,11 @@
-import Demo from './title';
+import Title from './title';
 import Card from './card';
 
 import { version } from '../../package.json';
 
 const components = {
-  Demo,
-  Card,
+  Title,
+  Card
 };
 
 const install = function (Vue) {
