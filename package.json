@@ -22,11 +22,10 @@
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "2.6.5",
     "rollup-plugin-vue": "^6.0.0",
     "vue": "^2.6.11",
-    "luckyexcel": "^1.0.1",
-    "papaparse": "^5.3.1"
+    "luckysheet-vue": "git+ssh://git@github.com:mvphjx/luckysheet-vue.git"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

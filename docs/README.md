@@ -14,4 +14,4 @@ import { Demo } from "my-ui";
 Vue.use(Demo);
 ```
 
-Copyright (c) 2022-present zack
+Copyright (c) 2022-present 

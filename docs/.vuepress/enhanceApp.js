@@ -2,6 +2,8 @@
 应用级别的配置
 你可以使用这个钩子来安装一些附加的 Vue 插件、注册全局组件，或者增加额外的路由钩子等
  */
+import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import MyUi from "../../components/lib";
 import '../../components/css/index.scss';
 export default ({
@@ -11,6 +13,8 @@ export default ({
      siteData, // 站点元数据
      isServer // 当前应用配置是处于 服务端渲染 或 客户端
 }) => {
+    console.log(siteData)
     console.log("将组件库的组件，注册到VUE实例中：Vue.use(MyUi)")
     Vue.use(MyUi);
+    Vue.use(Element)
 }

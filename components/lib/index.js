@@ -1,11 +1,13 @@
 import Title from './title';
 import Card from './card';
+import SearchInList from './searchinlist';
 
 import { version } from '../../package.json';
 
 const components = {
   Title,
-  Card
+  Card,
+  SearchInList
 };
 
 const install = function (Vue) {
