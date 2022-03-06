@@ -1,11 +1,11 @@
 <template>
   <div class="my-card-demo">
-    <my-card
+    <MyCard
         imgSrc="../java.png"
         summary="剑指Java面试-Offer直通车  百度资深面试官授课"
     />
     <br>
-    <my-card
+    <MyCard
         imgSrc="../c.png"
         summary="C语言系统化精讲  重塑你的编程思想 打造坚实的开发基础"
     >
@@ -15,9 +15,9 @@
           <div class="price">￥299.00</div>
         </div>
       </template>
-    </my-card>
+    </MyCard>
     <br>
-    <my-card
+    <MyCard
         imgSrc="../spring.png"
         :width="370"
         :imgHeight="90"
@@ -29,7 +29,7 @@
           <div class="level">10965收藏</div>
         </div>
       </template>
-    </my-card>
+    </MyCard>
   </div>
 </template>
 <script>

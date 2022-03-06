@@ -16,7 +16,7 @@
 <script>
 // 卡片组件
 export default {
-  name: 'my-card',
+  name: 'MyCard',
   props: {
     width: {
       type: Number,

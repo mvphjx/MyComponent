@@ -11,11 +11,11 @@
 ### 创建组件
 ```html
 <template>
-  <my-title/>
+  <MyTitle/>
 </template>
 ```
 ### Demo
-<my-title-demo/>
+<MyTitleDemo/>
 
 
 ## API

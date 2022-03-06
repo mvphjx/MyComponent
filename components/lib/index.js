@@ -1,12 +1,12 @@
-import Title from './title';
-import Card from './card';
+import MyTitle from './mytitle';
+import MyCard from './mycard';
 import SearchInList from './searchinlist';
 
 import { version } from '../../package.json';
 
 const components = {
-  Title,
-  Card,
+  MyTitle,
+  MyCard,
   SearchInList
 };
 

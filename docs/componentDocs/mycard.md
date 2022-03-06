@@ -11,7 +11,7 @@
 ### 创建组件
 ```html
 <template>
-  <my-card
+  <MyCard
     imgSrc="java.png"
     summary="剑指Java面试-Offer直通车  百度资深面试官授课" 
   />
@@ -26,7 +26,7 @@
 | summary  | 卡片概述 | String/Slot | false | - |
 | footer  | 卡片底部 | Slot | false | - |
 ### Demo
-<my-card-demo/>
+<MyCardDemo/>
 
 
 ## API

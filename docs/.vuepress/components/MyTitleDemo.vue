@@ -1,6 +1,6 @@
 <template>
-  <div class="my-card-demo">
-    <my-title/>
+  <div>
+    <MyTitle/>
   </div>
 </template>
 <script>

@@ -32,7 +32,7 @@ new SearchInListCompoment(options)
 
 ### Demo
 
-<searchinlist-demo/>
+<SearchinlistDemo/>
 
 
 
@@ -53,3 +53,14 @@ new SearchInListCompoment(options)
 * 界面表单渲染 Vue+ElementUI
 * Excel解析 LuckyExcel
 * CSV解析 Papa
+
+
+<script>
+import SearchinlistDemo from "../.vuepress/components/SearchInListDemo";
+
+export default {
+  
+components: {SearchinlistDemo}
+
+}
+</script>
