@@ -17,4 +17,13 @@ export default ({
     console.log("将组件库的组件，注册到VUE实例中：Vue.use(MyUi)")
     Vue.use(MyUi);
     Vue.use(Element)
+    //全局异常处理
+    Vue.config.errorHandler = function (error, vm) {
+        console.warn('VUE 抛出全局异常', error);
+        vm.$notify({
+            title: '警告',
+            message: error,
+            type: 'warning'
+        });
+    };
 }

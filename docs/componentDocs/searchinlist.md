@@ -1,8 +1,9 @@
-# 列表数据检索组件
+# SearchInList
+列表数据检索组件
 
 ## 快速上手
 
-###  基本介绍
+###  基本功能介绍
 
 * 打开文件导入
 * 从剪切板导入
@@ -15,26 +16,37 @@
 
 
 ### 创建组件
-new SearchInListCompoment(options)
+
+```html
+<template>
+  <div>
+    <SearchInList tableName="TP_CARD_VIEW"></SearchInList>
+  </div>
+</template>
+```
 * 参数：
-  * {Object} options
-    * {String} tableName
+  * {String} tableName
     
 
 * 说明：
 
         组件初始化，根据参数生成【对应库中的列】。
-* 示例：
-
-      new SearchInListCompoment({tableName: 'TP_CARD_VIEW'})
 
 
 
 ### Demo
 
-<SearchinlistDemo/>
+<SearchInListDemo/>
 
-
+##  异常处理
+考虑到不同项目弹窗提示存在差异，组件中的异常、错误会通过 throw 抛出，需要调用者进行捕获，根据自己的业务进行处理。
+```javascript
+//统一异常处理
+Vue.config.errorHandler = function (error, vm) {
+console.warn('VUE 抛出全局异常', error);
+alert(error);
+};
+```
 
 ## API
 
@@ -54,13 +66,3 @@ new SearchInListCompoment(options)
 * Excel解析 LuckyExcel
 * CSV解析 Papa
 
-
-<script>
-import SearchinlistDemo from "../.vuepress/components/SearchInListDemo";
-
-export default {
-  
-components: {SearchinlistDemo}
-
-}
-</script>
