@@ -12,6 +12,6 @@ module.exports = {
             {text: 'Github', link: 'https://github.com/mvphjx/MyComponent'},
             {text: 'VuePress', link: 'https://vuepress.vuejs.org/'},
         ],
-        sidebar: ['/', '/componentDocs/mycard', '/componentDocs/mytitle', '/componentDocs/searchinlist']
+        sidebar: ['/', '/componentDocs/mycard', '/componentDocs/mytitle', '/componentDocs/searchinlist', '/componentDocs/exception']
     }
 }

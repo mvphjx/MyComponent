@@ -1,7 +1,7 @@
 {
-  "name": "my-ui",
+  "name": "my-components",
   "version": "0.0.1",
-  "description": "基于vue的管理端组件库",
+  "description": "基于vue的组件库",
   "main": "dist/index.umd.js",
   "keywords": [
     "vue",
