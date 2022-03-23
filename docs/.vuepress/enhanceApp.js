@@ -4,18 +4,26 @@
  */
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import MyUi from "../../components/lib";
+// import MyUi from "../../components/lib";
 import '../../components/css/index.scss';
-export default ({
-     Vue, // VuePress 正在使用的 Vue 构造函数
-     options, // 附加到根实例的一些选项
-     router, // 当前应用的路由实例
-     siteData, // 站点元数据
-     isServer // 当前应用配置是处于 服务端渲染 或 客户端
-}) => {
+
+export default async ({
+                          Vue, // VuePress 正在使用的 Vue 构造函数
+                          options, // 附加到根实例的一些选项
+                          router, // 当前应用的路由实例
+                          siteData, // 站点元数据
+                          isServer // 当前应用配置是处于 服务端渲染 或 客户端
+                      }) => {
     console.log(siteData)
-    console.log("将组件库的组件，注册到VUE实例中：Vue.use(MyUi)")
-    Vue.use(MyUi);
+    //fix Vuepress执行 build,出现 window is not defined 错误
+    if (!isServer) {
+        await import("../../components/lib").then(module => {
+            console.log("将组件库的组件，注册到VUE实例中：Vue.use(MyUi)")
+            //Vue.use(MyUi);
+            //fix 相比import from,import.then 需要手动获取default属性
+            Vue.use(module.default);
+        })
+    }
     Vue.use(Element)
     //全局异常处理
     Vue.config.errorHandler = function (error, vm) {
