@@ -3,7 +3,7 @@
 module.exports = {
     title: 'My-UI',
     description: 'Just playing around',
-    base: "/myui/",
+    base: "/MyComponent/",
     //添加了一个luckysheet依赖的外部js库，不支持模块化。。。
     head: [['script', {src: 'https://cdn.jsdelivr.net/npm/luckysheet/dist/plugins/js/plugin.js'}]],
     themeConfig: {
